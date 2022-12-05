@@ -46,5 +46,10 @@ group :development do
   # gem "spring"
 end
 
+gem "bcrypt"
+
+gem "faker"
+
+gem "active_model_serializers", "~> 0.10.12"
 
 gem "ruby-lsp", "~> 0.3.6", :group => :development
