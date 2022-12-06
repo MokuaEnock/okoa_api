@@ -47,7 +47,7 @@ group :development do
 end
 
 gem "bcrypt"
-
+gem "rack-cors"
 gem "faker"
 
 gem "active_model_serializers", "~> 0.10.12"
