@@ -5,7 +5,7 @@ class OrdersController < ApplicationController
 
   def create
     recipe = @current_user.orders.create!(order_params)
-    redner json: recipe, status: :created
+    render json: recipe, status: :created
   end
 
   private
