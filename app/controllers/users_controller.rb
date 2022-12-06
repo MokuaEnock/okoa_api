@@ -8,8 +8,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    current_user = User.find(session[:user_id])
-    redner json: current_user
+    redner json: @current_user
   end
 
   private
