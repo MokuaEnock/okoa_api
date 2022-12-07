@@ -5,7 +5,7 @@ class CreateOrders < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :location
       t.integer :weight
-      t.string :type
+      t.string :wastetype
       t.string :instructions
       t.date :date
 

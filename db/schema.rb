@@ -16,7 +16,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_224506) do
     t.string "name"
     t.string "location"
     t.integer "weight"
-    t.string "type"
+    t.string "wastetype"
     t.string "instructions"
     t.date "date"
     t.datetime "created_at", null: false
