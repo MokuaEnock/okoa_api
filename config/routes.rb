@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   resources :orders, only: %i[index create show update]
+  # get users
+  get '/users', to: 'users#index'
+
   # Authentication
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'

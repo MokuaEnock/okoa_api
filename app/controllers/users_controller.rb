@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  skip_before_action :authorize, only: %i[create show]
+  # skip_before_action :authorize, only: %i[create show]
 
   # GET /users
   def index
