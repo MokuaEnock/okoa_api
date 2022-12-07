@@ -19,6 +19,7 @@ class OrdersController < ApplicationController
 
   def order_params
     params.permit(
+      :user_id,
       :name,
       :location,
       :weight,
