@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :orders, only: %i[index create show update]
+  resources :orders, only: %i[index create show update destroy]
+  
   # get users
   get '/users', to: 'users#index'
 
