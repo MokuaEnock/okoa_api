@@ -1,7 +1,7 @@
 class OrdersController < ApplicationController
   # skip_before_action :authorize, only: %i[create index show]
   rescue_from ActiveRecord::RecordNotFound, with: :render_404
-    rescue_from ActiveRecord::RecordInvalid, with: :render_422
+  rescue_from ActiveRecord::RecordInvalid, with: :render_422
 
   def index
     render json: Order.all
@@ -15,6 +15,12 @@ class OrdersController < ApplicationController
   def show
     order = Order.find(params[:id])
     render json: order, status: :ok
+  end
+
+  def destroy
+    order = Order.find(params[:id])
+    order.destroy
+    head :no_content
   end
 
   private
