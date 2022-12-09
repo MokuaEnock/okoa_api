@@ -31,7 +31,6 @@ class OrdersController < ApplicationController
       :name,
       :location,
       :weight,
-      # :email,
       :wastetype,
       :instructions,
       :date
